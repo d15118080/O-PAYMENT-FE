@@ -1,5 +1,5 @@
-const EndPoint = 'http://127.0.0.1:8070/api/v1';
-//const EndPoint = 'http://dev.conpay.kr/api/v1';
+//const EndPoint = 'http://127.0.0.1:8070/api/v1';
+const EndPoint = 'http://dev.conpay.kr/api/v1';
 function loading(type){
     if(type === 'on'){
         $('.wrap').fadeOut(500);

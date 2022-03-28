@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>오늘의 결제</title>
+    <title>콘페이 - 대시보드</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
@@ -53,9 +53,9 @@
                 </div>
 
                 <div class="mybalance_w">
-                    <p>현재 오결 잔액</p>
+                    <p>현재 Con</p>
                     <p class="balance"><span class="user_money"></span>
-                        <span class="won">원</span>
+                        <span class="won">C</span>
                     </p>
                 </div>
 
@@ -119,7 +119,7 @@
             <div class="my_info_bx">
                 <h2>Your Payinfo</h2>
                 <p class="balance" > <span class="user_money"></span>
-                    <span class="txt_won">원</span>
+                    <span class="txt_won">C</span>
                 </p>
                 <div class="bot_bx">
                     <p class="btn_apply">
