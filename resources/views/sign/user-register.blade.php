@@ -32,7 +32,6 @@
 
                     <!-- 인증정보 -->
                     <div class="cert_ipt">
-                        <form action="">
                             <fieldset>
                                 <legend>인증정보 입력</legend>
                                 <!-- 입력박스 -->
@@ -89,7 +88,6 @@
                                     </p>
                                 </div>
                             </fieldset>
-                        </form>
                     </div>
                     <!-- //인증정보 -->
 

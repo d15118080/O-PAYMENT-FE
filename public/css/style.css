@@ -18,7 +18,9 @@ a:active {color:inherit;}
 /* 메인 헤더 */
 .header_w.main {justify-content:space-between;padding:0 20px;background-color:transparent;}
 .header_w.main h1 {flex-grow:0;height:100%;text-align:left;}
-.header_w.main h1 a{display:flex;align-items:center;width:139px;height:100%;}
+.header_w.main h1 a{display:flex;align-items:center;width:139px;height:100%; text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;}
 .header_w.main h1 a img{width:100%;height:35px;}
 .header_w.main h1 {flex-grow:0;text-align:left;}
 .header_w.main .main_right_w {display:flex;flex-direction:row;justify-content:space-between;align-content:center;}
@@ -125,7 +127,11 @@ a:active {color:inherit;}
 .sign_w.join_top_pd {padding-top: 68px;}
 .sign_w .sign_header {display:flex;flex-direction:column;align-items:center;}
 .sign_w .sign_header .logo_tit {text-align:center;}
-.sign_w .sign_header .logo_tit strong {display:inline-block;font-size:24px;color:#000;font-weight:500;background:url(/img/sign_logo_tit.png)no-repeat left top;background-size:64px auto;padding: 12px 0 9px 75px;}
+.sign_w .sign_header .logo_tit strong {display: inline-block;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    padding: 12px 0 9px 0;}
 .sign_w .sign_header p {font-size:12px;font-weight:400;color:#000;margin-top:17px;padding:0 25px;line-height: 1.55;}
 /* 로그인 여백 */
 .sign_w .login {margin-top:88px;padding:0 16px;}

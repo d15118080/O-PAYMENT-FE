@@ -19,7 +19,7 @@
 <div class="wrap bgGrey" >
     <!-- 헤더 -->
     <div   class="header_w main">
-        <h1><a href="#none"><img src="/img/main_logo.png" alt="오늘의 결제"></a></h1>
+        <h1><a href="#none">CON-PAY</a></h1>
         <!-- <p class="btn_close">
             <a href="#none">닫기5</a>
         </p> -->
@@ -61,7 +61,7 @@
 
                 <nav class="gnb">
                     <p class="withdraw_btn">
-                        <a href="#"><img src="/img/icon_withdraw.png" alt=""> 출금관리</a>
+                        <a href="/setting"><img src="/img/icon_withdraw.png" alt="">출금정보 관리</a>
                     </p>
                     <ul>
                         <li class="myinfo">
@@ -123,7 +123,7 @@
                 </p>
                 <div class="bot_bx">
                     <p class="btn_apply">
-                        <a href="#">충전신청</a>
+                        <a class="charge_on">충전신청</a>
                     </p>
                     <p class="acc_number ">
                         <strong class="con_number"></strong>
@@ -135,15 +135,15 @@
             <!-- //현재잔액 -->
             <!-- 금융메뉴 -->
             <div class="finance_w">
-                <a href="#none">
+                <a class="charge_on">
                     <img src="/img/icon_finance_1.png" alt="충전">
                     <span>CON 충전</span>
                 </a>
-                <a href="#none">
+                <a id="remittance_on">
                     <img src="/img/icon_finance_2.png" alt="송금">
                     <span>CON 송금</span>
                 </a>
-                <a href="#none">
+                <a id="withdraw_on">
                     <img src="/img/icon_finance_3.png" alt="출금">
                     <span>CON 출금</span>
                 </a>
@@ -240,6 +240,7 @@
 </div>
 <!-- 컨테이너 -->
 
+<!--로딩바-->
 <div class="loading_start" id="loading1" style="display: none">
     <div class="loading1">
         <div class="bar"></div>
@@ -261,11 +262,11 @@
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-
     </div>
     <div class="wait">불러오는중..</div>
 </div>
-
+<!--로딩바 끝-->
+@include('include/layeroverlay')
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
