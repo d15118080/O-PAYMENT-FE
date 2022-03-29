@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -121,41 +122,28 @@
                 </p>
                 <div class="bot_bx">
                     <p class="btn_apply">
-                        <a class="charge_on">충전신청</a>
+                        <a class="charge_on">Welcome</a>
                     </p>
                     <p class="acc_number ">
                         <strong class="con_number"></strong>
                         <span>( <span class="user_id"></span> )</span>
                     </p>
                 </div>
-
             </div>
             <!-- //현재잔액 -->
-            <!-- 금융메뉴 -->
-            <div class="finance_w">
-                <a class="charge_on">
-                    <img src="/img/icon_finance_1.png" alt="충전">
-                    <span>CON 충전</span>
-                </a>
-                <a id="remittance_on">
-                    <img src="/img/icon_finance_2.png" alt="송금">
-                    <span>CON 송금</span>
-                </a>
-                <a id="withdraw_on">
-                    <img src="/img/icon_finance_3.png" alt="출금">
-                    <span>CON 출금</span>
-                </a>
-            </div>
-            <!-- //금융메뉴 -->
+
 
             <!-- 최근 거래내역 -->
             <div class="deal_list_w">
                 <div class="top_w">
                     <h2>거래내역</h2>
                     <p class="sort">
-                        <a href="#none" class="on">충전</a>
-                        <a href="#none">출금</a>
-                        <a href="#none">송금</a>
+                        <span style="font-size: 15px;"><span id="last"></span> ~ <span id="now"></span></span>&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        <a href="#none" class="on">전체</a>
+{{--                        <a href="#none">충전</a>--}}
+{{--                        <a href="#none">출금</a>--}}
+{{--                        <a href="#none">송금</a>--}}
                     </p>
                 </div>
 
@@ -193,6 +181,7 @@
     </div>
     <div class="wait">불러오는중..</div>
 </div>
+
 <!--로딩바 끝-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -1,15 +1,20 @@
 let loading_s = false;    //중복실행여부 확인 변수
 let page = 1;   //불러올 페이지
-import {EndPoint, loading, menu, Token_Check,comma ,add_tran_list ,index_reload} from './End-point.js';
+let type = "all";
 
+import {EndPoint, loading, menu, Token_Check,comma ,add_tran_list ,index_reload,today,lastWeek} from './End-point.js';
 Token_Check();
+let now = today();
+let lastnow = lastWeek();
+$('#now').text(now);
+$('#last').text(lastnow);
 
 //정보 요청
 $(document).ready(function () {
     load();
     loading('on');
     axios({
-        url: EndPoint + '/user/transaction_get_data',
+        url: EndPoint + '/user/transaction_get_data?type='+type,
         method: 'get',
         headers: {
             'Authorization': 'Bearer ' + $.cookie('Token'),
@@ -37,7 +42,7 @@ $(document).ready(function () {
 function load(){
     if(!loading_s) {
         axios({
-            url: EndPoint + '/user/transaction_get_his_data?page='+page ,
+            url: EndPoint + '/user/transaction_get_his_data?page='+page+'&type='+type ,
             method: 'get',
             headers: {
                 'Authorization': 'Bearer ' + $.cookie('Token'),
@@ -50,13 +55,13 @@ function load(){
                 console.log(data)
                 add_tran_list(data.data[0].data)
                 let length = data.data[0].last_page;
-                // if( length < page ){
-                //     loading_s = true;
-                // }
-                page++; //페이지 증가
-                loading_s = false;
-                console.log(page)
-                console.log(loading_s)
+                if( length < page ){
+                    loading_s = true;
+                }else{
+                    page++; //페이지 증가
+                    loading_s = false;
+                }
+
             })
             .catch(err => {
                 const data = JSON.parse(err.request.response)
