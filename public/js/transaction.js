@@ -86,7 +86,7 @@ $(function(){
 
         // scrollbar의 thumb가 바닥 전 30px까지 도달 하면 리스트를 가져온다.
         if(!loading_s) {
-            if (scrollTop + windowHeight + 0.1 > documentHeight) {
+            if (scrollTop + windowHeight + 10 > documentHeight) {
                 load()
                 loading_s = true;
             }
