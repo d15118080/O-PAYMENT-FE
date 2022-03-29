@@ -162,78 +162,14 @@
 
                 </div>
 
-                <div class="list">
-                    <ul>
-                        <li>
-                            <a href="#none">
-                                <p class="img">
-                                    <img src="/img/icon_deal_charge.png" alt="오결 충전">
-                                </p>
-                                <div class="history_w">
-                                    <strong class="txt">오결 충전</strong>
-                                    <span class="date">2022-02-24&nbsp;20:43:12</span>
-                                </div>
-                                <div class="money">
-                                    <p class="plus"><strong>+ 40,000<span class="won">원</span></strong></p>
-                                    <p class="remaining">잔액 : 50,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <p class="img">
-                                    <img src="/img/icon_deal_withdraw.png" alt="오결 출금">
-                                </p>
-                                <div class="history_w">
-                                    <strong class="txt">오결 출금</strong>
-                                    <span class="date">2022-02-24&nbsp;20:43:12</span>
-                                </div>
-                                <div class="money">
-                                    <p class="minus"><strong>- 40,000<span class="won">원</span></strong></p>
-                                    <p class="remaining">잔액 : 50,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <p class="img">
-                                    <img src="/img/icon_deal_transfer.png" alt="오결 송금">
-                                </p>
-                                <div class="history_w">
-                                    <strong class="txt">오결 송금</strong>
-                                    <span class="date">2022-02-24&nbsp;20:43:12</span>
-                                </div>
-                                <div class="money">
-                                    <p><strong>40,000<span class="won">원</span></strong></p>
-                                    <p class="remaining">잔액 : 50,000원</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#none">
-                                <p class="img">
-                                    <img src="/img/icon_deal_charge.png" alt="오결 충전">
-                                </p>
-                                <div class="history_w">
-                                    <strong class="txt">오결 충전</strong>
-                                    <span class="date">2022-02-24&nbsp;20:43:12</span>
-                                </div>
-                                <div class="money">
-                                    <p class="plus"><strong>+ 40,000<span class="won">원</span></strong></p>
-                                    <p class="remaining">잔액 : 50,000원</p>
-                                </div>
-                            </a>
-                        </li>
+                <div class="list ">
+                    {{--거래내역5건--}}
+                    <ul class="tran_list">
                     </ul>
+                    {{--거래내역5건--}}
                 </div>
             </div>
 
-            <!--            <div class="bot_bann">-->
-            <!--                <a href="#none">-->
-            <!--                    등록하고 결제까지 1분!<br>-->
-            <!--                    <strong>오결의 결제 이 방법</strong>-->
-            <!--                </a>-->
-            <!--            </div>-->
         </div>
     </div>
 

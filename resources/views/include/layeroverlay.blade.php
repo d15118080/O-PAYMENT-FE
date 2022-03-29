@@ -33,13 +33,13 @@
                             <!-- 입력 -->
                             <h2>CON 충전금액</h2>
                             <div class="ipt_bx">
-                                <input type="text" placeholder="1일 1회 최대 충전금액 500만원" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" maxlength="3">
+                                <input id="amount" type="text" placeholder="1일 1회 최대 충전금액 500만원" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" maxlength="3">
                                 <span class="won">만원</span>
                             </div>
                             <!-- //입력 -->
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a href="#noen" class="btn_default">CON 충전신청</a>
+                                <a id="charge_send" class="btn_default">CON 충전신청</a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>

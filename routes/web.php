@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
+use Illuminate\Contracts\Cookie;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('main/index');
-});
+})->middleware('Token_Check');
 Route::get('/setting',function (){
     return view('main/setting');
-});
+})->middleware('Token_Check');
 
 Route::get('/login', function () {
     return view('sign/user-login');
@@ -27,3 +28,6 @@ Route::get('/register', function () {
     return view('sign/user-register');
 });
 
+Route::get('/test',function (Request $request){
+    return $_COOKIE['Token'];
+});
