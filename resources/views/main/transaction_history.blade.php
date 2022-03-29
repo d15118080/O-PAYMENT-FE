@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>콘페이 - 대시보드</title>
+    <title>오늘의 결제</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<style>
 
-</style>
 <body>
-<div class="wrap bgGrey" >
+<div class="wrap bgGrey">
     <!-- 헤더 -->
-    <div   class="header_w main">
+    <div class="header_w main">
         <h1><a href="/">CON-PAY</a></h1>
         <!-- <p class="btn_close">
             <a href="#none">닫기5</a>
@@ -108,7 +106,7 @@
         <div class="contents">
             <div class="msg_bx">
                 <p class="welcome_msg_1">
-                    <span class="user_name"></span> 님! 안녕하세요 <i id="re_load" class="fa fa-refresh" aria-hidden="true"></i>
+                    <span class="user_name"></span> 님! 안녕하세요
                 </p>
                 <p class="welcome_msg_2">
                     언제 어디서나 누구나 바로결제!
@@ -118,7 +116,7 @@
             <!-- 현재잔액 -->
             <div class="my_info_bx">
                 <h2>Your Payinfo</h2>
-                <p class="balance" > <span class="user_money"></span>
+                <p class="balance"><span class="user_money"></span>
                     <span class="txt_won">C</span>
                 </p>
                 <div class="bot_bx">
@@ -152,30 +150,24 @@
 
             <!-- 최근 거래내역 -->
             <div class="deal_list_w">
-
                 <div class="top_w">
-                    <h2>최근 거래내역</h2>
-
-                    <p class="btn_info_menu">
-                        <a style="text-decoration-line:none;font-size: small;" href="/transaction">더보기</a>
+                    <h2>거래내역</h2>
+                    <p class="sort">
+                        <a href="#none" class="on">충전</a>
+                        <a href="#none">출금</a>
+                        <a href="#none">송금</a>
                     </p>
-
                 </div>
 
-                <div class="list ">
-                    {{--거래내역5건--}}
+                <div class="list">
                     <ul class="tran_list">
                     </ul>
-                    {{--거래내역5건--}}
                 </div>
+                <!-- //거래내역 -->
             </div>
-
         </div>
     </div>
-
 </div>
-<!-- 컨테이너 -->
-
 <!--로딩바-->
 <div class="loading_start" id="loading1" style="display: none">
     <div class="loading1">
@@ -202,11 +194,10 @@
     <div class="wait">불러오는중..</div>
 </div>
 <!--로딩바 끝-->
-@include('include/layeroverlay')
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="//unpkg.com/axios/dist/axios.min.js"></script>
-<script type="module" src="/js/index.js"></script>
+<script type="module" src="/js/transaction.js"></script>
 </body>
 </html>

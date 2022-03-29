@@ -17,8 +17,13 @@ use Illuminate\Contracts\Cookie;
 Route::get('/', function () {
     return view('main/index');
 })->middleware('Token_Check');
+
 Route::get('/setting',function (){
     return view('main/setting');
+})->middleware('Token_Check');
+
+Route::get('/transaction',function (){
+    return view('/main/transaction_history');
 })->middleware('Token_Check');
 
 Route::get('/login', function () {
@@ -28,6 +33,4 @@ Route::get('/register', function () {
     return view('sign/user-register');
 });
 
-Route::get('/test',function (Request $request){
-    return $_COOKIE['Token'];
-});
+
