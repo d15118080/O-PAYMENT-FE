@@ -146,5 +146,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="//unpkg.com/axios/dist/axios.min.js"></script>
 <script type="module" src="/js/index.js"></script>
+
 </body>
 </html>

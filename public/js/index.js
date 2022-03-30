@@ -126,3 +126,48 @@ $('#charge_send').click(function () {
             )
         })
 });
+
+//송금신청
+$('#send_money').click(function () {
+    Swal.fire({
+        title: '잠시만 기다려주세요',
+        timerProgressBar: true,
+        allowEscapeKey: false,
+        allowOutsideClick: false,
+        didOpen: () => {
+            Swal.showLoading()
+        }
+    })
+    axios({
+        url: EndPoint + '/user/remittance_request',
+        method: 'post',
+        headers: {
+            'Authorization': 'Bearer ' + $.cookie('Token'),
+            'Content-Type': 'application/json'
+        },
+        data :{
+            'remittance_info': $('#remittance_info').val(),
+            'remittance_money': $('#remittance_moeny').val()
+        }
+    })
+        .then((response) => {
+            $("li").remove(".tran_list_tran");
+            Swal.close()
+            $('.remittance_layer').fadeOut(300);
+            $('#remittance_info').val('')
+            $('#remittance_moeny').val('')
+            index_reload()
+        })
+        .catch(err => {
+            const data = JSON.parse(err.request.response)
+            $('#remittance_info').val('')
+            $('#remittance_moeny').val('')
+            loading('off')
+            Swal.fire(
+                data.result.resultMsg,
+                data.result.advanceMsg,
+                'question'
+            )
+        })
+});
+

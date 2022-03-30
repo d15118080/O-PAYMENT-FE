@@ -107,7 +107,7 @@
                 <!-- //텍스트 -->
                 <div class="apply_info">
                     <p>
-                        송금 금액은 1일,1회 최대 500백만원 입니다.
+                        송금 금액은 1일 최대 500백만원 입니다.
                     </p>
 
                 </div>
@@ -119,18 +119,18 @@
                             <!-- 입력 -->
                             <h2>받는사람</h2>
                             <div class="ipt_bx">
-                                <input type="text" placeholder="받는분의 뱅크번호 또는 닉네임">
+                                <input id="remittance_info" type="text" placeholder="받는분의 뱅크번호 또는 닉네임">
                             </div>
 
                             <h2>보낼 금액</h2>
                             <div class="ipt_bx">
-                                <input type="text" placeholder="보낼 금액을 입력해 주세요">
+                                <input  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" id="remittance_moeny" type="text" placeholder="보낼 금액을 입력해 주세요">
                                 <span class="won">원</span>
                             </div>
                             <!-- //입력 -->
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a href="noen" class="btn_default">CON 송금하기</a>
+                                <a id="send_money" class="btn_default">CON 송금하기</a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>

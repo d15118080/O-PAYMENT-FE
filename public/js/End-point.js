@@ -1,5 +1,6 @@
 //const EndPoint = 'http://172.30.1.4:8050/api/v1';
-const EndPoint = 'https://dev.conpay.kr/api/v1';
+//const EndPoint = 'https://dev.conpay.kr/api/v1';
+const EndPoint = 'http://127.0.0.1:8050/api/v1';
 
 function loading(type){
     if(type === 'on'){
@@ -46,6 +47,7 @@ function comma(str) {
     str = String(str);
     return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
 }
+
 function add_tran_list(arr){
     $.each(arr, function (index, el) {
         var amount = comma(el.amount);
@@ -55,10 +57,7 @@ function add_tran_list(arr){
             var title = "CON 충전대기";
             var p_class = "";
             var t_class = "+";
-            var tmp_amount = el.amount;
-            var tmp_balance = el.balance;
-            var plus_balance = tmp_amount+tmp_balance;
-            var balance = "예정 : "+comma(plus_balance);
+            var balance = "예정 : "+comma(el.balance);
         } else if (el.trxtype === 'charge') {
             var img_url = "/img/icon_deal_charge.png";
             var title = "CON 충전";
@@ -139,6 +138,7 @@ function today() {
 
     return today;
 }
+
 function lastWeek() {
     var Nowdate = new Date()
     var Agodate = new Date(Nowdate.getTime() - (7*24*60*60*1000))
@@ -147,6 +147,7 @@ function lastWeek() {
     var d = Agodate.getFullYear() + '-' + AgoMonth + '-' + AgoDay;
     return d;
 }
+
 export { EndPoint,loading,menu,Token_Check,comma,add_tran_list,index_reload,today,lastWeek};
 
 
