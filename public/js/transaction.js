@@ -39,6 +39,7 @@ $(document).ready(function () {
         })
 });
 
+//페이지네이션 로드
 function load(){
     if(!loading_s) {
         axios({
@@ -74,8 +75,7 @@ function load(){
     }
 }
 
-let isEnd = false;
-
+//윈도우 스크롤 체크
 $(function(){
     $(window).scroll(function(){
         let $window = $(this);
@@ -86,7 +86,7 @@ $(function(){
 
         // scrollbar의 thumb가 바닥 전 30px까지 도달 하면 리스트를 가져온다.
         if(!loading_s) {
-            if (scrollTop + windowHeight + 10 > documentHeight) {
+            if (scrollTop + windowHeight + 50 > documentHeight) {
                 load()
                 loading_s = true;
             }

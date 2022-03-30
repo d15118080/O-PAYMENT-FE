@@ -18,6 +18,7 @@
 <div class="wrap">
     <div class="sign_w join_top_pd">
         <div class="sign_header">
+            <h2 class="txs_x" style="margin-bottom: 5%; color: #2E56A1"><strong>내손안의 작은 지갑</strong></h2>
             <h1 class="txs_xl">콘페이</h1>
             <p>서비스 사용을 위하여 회원가입을 진행 합니다.</p>
         </div>
