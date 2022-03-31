@@ -116,8 +116,8 @@
                 <h1>오결 송금</h1>
                 <!-- //텍스트 -->
                 <div class="apply_info">
-                    <p>
-                        송금 금액은 1일 최대 500백만원 입니다.
+                    <p style="font-size: 15px; color: #3A87EF">
+                       <b> 송금 금액은 1일 최대 6,000,000 Con 입니다.</b>
                     </p>
 
                 </div>
