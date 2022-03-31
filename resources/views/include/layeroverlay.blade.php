@@ -113,7 +113,7 @@
         <div class="ly_con remittance_con">
             <div class="apply_pop">
                 <!-- 텍스트 -->
-                <h1>오결 송금</h1>
+                <h1>콘 송금</h1>
                 <!-- //텍스트 -->
                 <div class="apply_info">
                     <p style="font-size: 15px; color: #3A87EF">
