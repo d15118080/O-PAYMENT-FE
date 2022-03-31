@@ -105,11 +105,13 @@ $('#charge_send').click(function () {
             'Content-Type': 'application/json'
         },
         data :{
+            'charge_check':$('#charge_check').val(),
             'amount': $('#amount').val()
         }
     })
         .then((response) => {
             const data = JSON.parse(response.request.response)
+            $('#amount').val('')
             location.href='/transaction/'+data.data.id
         })
         .catch(err => {
@@ -121,6 +123,15 @@ $('#charge_send').click(function () {
                 'question'
             )
         })
+});
+
+//약관동의
+$('#charge_check').click(function(){
+    var checked = $('#charge_check').is(':checked');
+    if(checked)
+        $('#charge_check').val('1')
+    else
+        $('#charge_check').val('0')
 });
 
 //송금신청
@@ -166,4 +177,6 @@ $('#send_money').click(function () {
             )
         })
 });
+
+
 

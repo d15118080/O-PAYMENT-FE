@@ -250,7 +250,14 @@ a:active {color:inherit;}
 .ly_pop_wrap .cert_pop .btn_w {margin: 35px 50px 50px;}
 .ly_pop_wrap .cert_pop .btn_w .btn_default {border-radius:15px;height:72px; box-shadow:0 4px 31px rgba(37,31,48, .2);}
 
-
+/* 충전동의 */
+.charge_lay .agree_w {margin-top:23px;}
+.charge_lay .agree_w label {margin-top:23px;line-height: 1.45;}
+.charge_lay .agree_w .check {display:inline-block;}
+.charge_lay .agree_w .check input[type="checkbox"] {display:inline-block;width:24px;height:24px;background: url(/img/icon_agree_check.png) no-repeat center center;background-size: 17px 13px;vertical-align:-4px;}
+.charge_lay .agree_w .check input[type="checkbox"]:checked {background: url(/img/icon_agree_checked.png) no-repeat center center;background-size: 17px 13px;}
+.charge_lay .agree_w label strong {font-size:14px;font-weight:400;}
+.charge_lay .agree_w label span {font-size:10px;font-weight:400;}
 
 
 

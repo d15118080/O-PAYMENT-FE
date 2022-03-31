@@ -28,7 +28,7 @@
                 <!-- 입력박스 -->
                 <div class="ipt_section">
                     <form action="">
-                        <fieldset>
+                        <fieldset class="charge_lay">
                             <legend>CON 충전 신청</legend>
                             <!-- 입력 -->
                             <h2>CON 충전금액</h2>
@@ -37,6 +37,16 @@
                                 <span class="won">만원</span>
                             </div>
                             <!-- //입력 -->
+                            <div class="agree_w">
+                                <label for="">
+                                <span class="check">
+                                    <input id="charge_check" type="checkbox" value="0">
+                                </span>
+                                    <strong>CON 충전 약관의 관한 동의</strong><br>
+                                    <span>미동의 시 충전신청이 이루어지지 않습니다.</span>
+                                </label>
+
+                            </div>
                             <!-- 버튼영역 -->
                             <div class="btn_w">
                                 <a id="charge_send" class="btn_default">CON 충전신청</a>
