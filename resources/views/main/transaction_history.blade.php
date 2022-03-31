@@ -24,12 +24,12 @@
         </p> -->
         <!-- 메뉴열기 / 알림보기 버튼 -->
         <div class="main_right_w">
-            <p class="btn_noti">
-                <a href="#none">
-                    알림
-                    <span class="cnt">0</span>
-                </a>
-            </p>
+{{--            <p class="btn_noti">--}}
+{{--                <a href="#none">--}}
+{{--                    알림--}}
+{{--                    <span class="cnt">0</span>--}}
+{{--                </a>--}}
+{{--            </p>--}}
             <p class="btn_gnb">
                 <a id="menu_on">메뉴열기</a>
             </p>

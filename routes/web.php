@@ -26,6 +26,10 @@ Route::get('/transaction',function (){
     return view('/main/transaction_history');
 })->middleware('Token_Check');
 
+Route::get('/transaction/{id}',function (){
+    return view('/main/transaction_view');
+})->middleware('Token_Check');
+
 Route::get('/login', function () {
     return view('sign/user-login');
 });

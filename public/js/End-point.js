@@ -1,5 +1,5 @@
-//const EndPoint = 'http://172.30.1.4:8050/api/v1';
-const EndPoint = 'https://dev.conpay.kr/api/v1';
+const EndPoint = 'http://172.30.1.4:8050/api/v1';
+//const EndPoint = 'https://dev.conpay.kr/api/v1';
 //const EndPoint = 'http://127.0.0.1:8050/api/v1';
 
 function loading(type){
@@ -39,10 +39,7 @@ function Token_Check(){
         })
 }
 
-//back
-$('.btn_history_back').click(function () {
-    history.back();
-});
+
 function comma(str) {
     str = String(str);
     return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
@@ -57,35 +54,41 @@ function add_tran_list(arr){
             var title = "CON 충전대기";
             var p_class = "";
             var t_class = "+";
-            var balance = "예정 : "+comma(el.balance);
+            var balance = "예정 : "+comma(el.balance) +" 원";
         } else if (el.trxtype === 'charge') {
             var img_url = "/img/icon_deal_charge.png";
             var title = "CON 충전";
             var p_class = "plus";
             var t_class = "+";
-            var balance = "잔액 : "+comma(el.balance);
+            var balance = "잔액 : "+comma(el.balance) +" 원";
         } else if (el.trxtype === 'deposit') {
             var title = "CON 입금";
             var img_url = "/img/icon_deal_charge.png";
             var p_class = "";
             var t_class = "";
-            var balance = "잔액 : "+comma(el.balance);
+            var balance = "잔액 : "+comma(el.balance) +" 원";
         } else if (el.trxtype === 'withdraw') {
             var title = "CON 출금";
             var img_url = "/img/icon_deal_withdraw.png";
             var p_class = "minus";
             var t_class = "-";
-            var balance = "잔액 : "+comma(el.balance);
+            var balance = "잔액 : "+comma(el.balance) +" 원";
         } else if (el.trxtype === 'remittance') {
             var title = "CON 송금";
             var img_url = "/img/icon_deal_transfer.png";
             var p_class = "minus";
             var t_class = "-";
-            var balance = "잔액 : "+comma(el.balance);
+            var balance = "잔액 : "+comma(el.balance) +" 원";
+        } else{
+            var img_url = "/img/icon_deal_charge.png";
+            var title = "CON 충전취소";
+            var p_class = "";
+            var t_class = "";
+            var balance = "취소된 거래";
         }
 
         $(".tran_list").append(`<li class="tran_list_tran">
-                            <a href="#none">
+                            <a href="/transaction/${el.id}">
                                 <p class="img">
                                     <img src="${img_url}"alt="">
                                 </p>
@@ -95,8 +98,8 @@ function add_tran_list(arr){
                                     <span class="date">${el.date_ymd}&nbsp;${el.date_time}</span>
                                 </div>
                                 <div class="money">
-                                    <p class="${p_class}"><strong>${t_class} ${amount}<span class="won">원</span></strong></p>
-                                    <p class="remaining">${balance}원</p>
+                                    <p class="${p_class}"><strong>${t_class} ${amount}<span class="won"> 원</span></strong></p>
+                                    <p class="remaining">${balance}</p>
                                 </div>
                             </a>
                         </li>`);

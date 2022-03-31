@@ -4,6 +4,8 @@ let type = "all";
 
 import {EndPoint, loading, menu, Token_Check,comma ,add_tran_list ,index_reload,today,lastWeek} from './End-point.js';
 Token_Check();
+let search = "";
+let trxtype ="";
 let now = today();
 let lastnow = lastWeek();
 $('#now').text(now);
@@ -14,7 +16,7 @@ $(document).ready(function () {
     load();
     loading('on');
     axios({
-        url: EndPoint + '/user/transaction_get_data?type='+type,
+        url: EndPoint + '/user/transaction_get_data',
         method: 'get',
         headers: {
             'Authorization': 'Bearer ' + $.cookie('Token'),
@@ -43,7 +45,7 @@ $(document).ready(function () {
 function load(){
     if(!loading_s) {
         axios({
-            url: EndPoint + '/user/transaction_get_his_data?page='+page+'&type='+type ,
+            url: EndPoint + `/user/transaction_get_his_data?page=${page}&lookup_start=${lastnow}&lookup_end=${now}&trxtype=${trxtype}&search=${search}` ,
             method: 'get',
             headers: {
                 'Authorization': 'Bearer ' + $.cookie('Token'),

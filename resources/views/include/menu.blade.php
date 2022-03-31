@@ -25,17 +25,17 @@
                 <a href="/setting"><img src="/img/icon_withdraw.png" alt="">출금정보 관리</a>
             </p>
             <ul>
-                <li class="myinfo">
-                    <a href="#none">
-                        <img src="/img/icon_my_info.png" alt="">내정보
-                    </a>
-                </li>
+{{--                <li class="myinfo">--}}
+{{--                    <a href="#none">--}}
+{{--                        <img src="/img/icon_my_info.png" alt="">내정보--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
-                <li class="noti">
-                    <a href="#none">
-                        <img src="/img/icon_notice.png" alt="">공지사항
-                    </a>
-                </li>
+{{--                <li class="noti">--}}
+{{--                    <a href="#none">--}}
+{{--                        <img src="/img/icon_notice.png" alt="">공지사항--}}
+{{--                    </a>--}}
+{{--                </li>--}}
 
                 <li class="cs">
                     <a href="#none">

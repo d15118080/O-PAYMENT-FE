@@ -109,16 +109,12 @@ $('#charge_send').click(function () {
         }
     })
         .then((response) => {
-            $("li").remove(".tran_list_tran");
-            Swal.close()
-            $('.charge_layer').fadeOut(300);
-            $('#amount').val('')
-            index_reload()
+            const data = JSON.parse(response.request.response)
+            location.href='/transaction/'+data.data.id
         })
         .catch(err => {
             const data = JSON.parse(err.request.response)
             $('#amount').val('')
-            loading('off')
             Swal.fire(
                 data.result.resultMsg,
                 data.result.advanceMsg,
