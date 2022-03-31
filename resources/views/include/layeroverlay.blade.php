@@ -49,7 +49,7 @@
                             </div>
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a id="charge_send" class="btn_default">CON 충전신청</a>
+                                <a id="charge_send" class="btn_default">콘 충전신청</a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>
@@ -129,18 +129,18 @@
                             <!-- 입력 -->
                             <h2>받는사람</h2>
                             <div class="ipt_bx">
-                                <input id="remittance_info" type="text" placeholder="받는분의 뱅크번호 또는 닉네임">
+                                <input id="remittance_info" type="text" placeholder="받는분의 콘계좌 또는 가맹점명">
                             </div>
 
                             <h2>보낼 금액</h2>
                             <div class="ipt_bx">
                                 <input  oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" id="remittance_moeny" type="text" placeholder="보낼 금액을 입력해 주세요">
-                                <span class="won">원</span>
+                                <span class="won">con</span>
                             </div>
                             <!-- //입력 -->
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a id="send_money" class="btn_default">CON 송금하기</a>
+                                <a id="send_money" class="btn_default">콘 송금</a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>
