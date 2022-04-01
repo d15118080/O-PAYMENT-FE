@@ -61,7 +61,7 @@ function load(){
             .then((response) => {
                 const data = JSON.parse(response.request.response)
                 loading('off')
-                console.log(data)
+                
                 add_tran_list(data.data[0].data)
                 let length = data.data[0].last_page;
                 if( length < page ){
@@ -95,12 +95,12 @@ function re_load(){
         })
             .then((response) => {
                 const data = JSON.parse(response.request.response)
-                console.log(data)
+
                 $("li").remove(".tran_list_tran");
                 add_tran_list(data.data[0].data)
             })
             .catch(err => {
-                console.log(err)
+
                 const data = JSON.parse(err.request.response)
                 Swal.fire(
                     data.result.resultMsg,
