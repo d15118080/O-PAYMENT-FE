@@ -1,4 +1,4 @@
-import {EndPoint, loading, menu, Token_Check,comma ,add_tran_list ,index_reload,today,lastWeek} from './End-point.js';
+import {EndPoint, loading, menu, Token_Check,comma ,add_tran_list ,index_reload,today,day} from './End-point.js';
 Token_Check();
 let href = location.href;
 let id = href.match(/([^\/]*)\/*$/)[1];

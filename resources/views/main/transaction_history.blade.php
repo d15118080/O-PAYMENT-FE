@@ -76,17 +76,26 @@
             <!-- 최근 거래내역 -->
             <div class="deal_list_w">
                 <div class="top_w">
-                    <h2>거래내역</h2>
-                    <p class="sort">
-                        <span style="font-size: 15px;"><span id="last"></span> ~ <span id="now"></span></span>&nbsp;<i class="fa fa-calendar" aria-hidden="true"></i>
-                        &nbsp;&nbsp;
-                        <a href="#none" class="on">전체</a>
-{{--                        <a href="#none">충전</a>--}}
-{{--                        <a href="#none">출금</a>--}}
-{{--                        <a href="#none">송금</a>--}}
+                    <div class="search_w"><!-- 검색버튼 클릭 시 ipt_on 추가 -->
+                        <p class="search_btn">
+                            <a href="#none">검색</a>
+                        </p>
+                        <div class="ipt_bx search">
+                            <input class="search_input" type="text" placeholder="이름 검색">
+
+                        </div>
+                    </div>
+                    <p class="category_btn date_info">
+                        <a><span>조회기간 <span class="end_date"></span> ~ <span class="start_date"></span> &nbsp;&nbsp;&nbsp;</span></a>
+                    </p>
+                    <p class="category_btn">
+                        <a href="#none">
+                            <span id="M">1개월</span>
+                            <span id="Type">전체</span>
+                            <span>최신순</span>
+                        </a>
                     </p>
                 </div>
-
                 <div class="list">
                     <ul class="tran_list">
                     </ul>
@@ -96,6 +105,41 @@
         </div>
     </div>
 </div>
+
+{{--조회 레이어--}}
+<div class="layeroverlay trx_date_layer" style="display:none;">
+    <div class="ly_pop_wrap b_pop">
+        <div class="ly_con trxType_pop">
+            <div class="sort_pop">
+                <div class="inner">
+                    <h2>조회기간</h2>
+                    <ul class="dates_ul">
+                        <li class="on" data-id="30"><a href="#none">1개월</a></li><!-- 선택 시 on 클래스 추가 -->
+                        <li data-id="90"><a href="#none">3개월</a></li>
+                        <li data-id="180"><a href="#none">6개월</a></li>
+{{--                        <li data-id="4"><a href="#none">직접설정</a></li>--}}
+                    </ul>
+                </div>
+                <div class="inner">
+                    <h2>거래유형</h2>
+                    <ul class="trxType">
+                        <li data-id="" class="on"><a href="#none">전체</a></li>
+                        <li data-id="deposit"><a >입금</a></li>
+                        <li data-id="remittance"><a href="#none">송금</a></li>
+                        <li data-id="withdraw"><a >출금</a></li>
+                        <li data-id="charge"><a href="#none">충전</a></li>
+                    </ul>
+                </div>
+                <p class="btn">
+                    <a href="#none">확인</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{{--//조회 레이어--}}
+
+
 <!--로딩바-->
 <div class="loading_start" id="loading1" style="display: none">
     <div class="loading1">
