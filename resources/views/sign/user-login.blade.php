@@ -17,7 +17,7 @@
     <div class="sign_w login_top_pd">
         <div class="sign_header">
             <h2 class="txs_x" style="margin-bottom: 5%; color: #2E56A1"><strong>내손안의 작은 지갑</strong></h2>
-            <h1 class="txs_xl"><strong>콘-페이</strong></h1>
+            <h1 class="txs_xl"><strong>콘 페이</strong></h1>
             <p>서비스를 위해 로그인이 필요합니다.</p>
         </div>
 

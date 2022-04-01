@@ -14,13 +14,11 @@ a:active {color:inherit;}
 .header_w {position:relative;display:flex;flex-direction:row;align-items:center;height:80px;background-color:#fff;}
 .header_w h1 {flex-grow:1;text-align:center;font-size:17px;font-weight:500;color:#000000;}
 .header_w .btn_history_back {position:absolute;top:0;left:0;width:76px;height:100%;}
-.header_w .btn_history_back a {display:block;width:76px;height:100%;text-indent:-99999px;background:url(/img/btn_history_back.png) no-repeat center center;background-size:17px 17px;}
+.header_w .btn_history_back a {display:block;width:76px;height:100%;text-indent:-99999px;background:url(../img/btn_history_back.png) no-repeat center center;background-size:17px 17px;}
 /* 메인 헤더 */
 .header_w.main {justify-content:space-between;padding:0 20px;background-color:transparent;}
 .header_w.main h1 {flex-grow:0;height:100%;text-align:left;}
-.header_w.main h1 a{display:flex;align-items:center;width:139px;height:100%; text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;}
+.header_w.main h1 a{display:flex;align-items:center;width:139px;height:100%;}
 .header_w.main h1 a img{width:100%;height:35px;}
 .header_w.main h1 {flex-grow:0;text-align:left;}
 .header_w.main .main_right_w {display:flex;flex-direction:row;justify-content:space-between;align-content:center;}

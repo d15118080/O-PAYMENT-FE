@@ -19,7 +19,7 @@
 <div class="wrap bgGrey" >
     <!-- 헤더 -->
     <div   class="header_w main">
-        <h1><a href="/">CON-PAY</a></h1>
+        <h1><a href="/"><img src="/img/main_logo.png" alt="콘 페이"></a></h1>
         <!-- <p class="btn_close">
             <a href="#none">닫기5</a>
         </p> -->
