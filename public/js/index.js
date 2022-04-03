@@ -20,7 +20,11 @@ $(document).ready(function () {
             $('.user_id').text(data.data.user_id)
             $('.con_number').text(data.data.user_con_number)
             $('.user_name').text($.cookie('name'))
-            add_tran_list(data.data.transaction_history)
+            if(data.data.transaction_history === null){
+                $(".index_list").html(`<div style="text-align: center;margin-top: 35%;"><h3>거래내역이 존재하지 않습니다</h3></div>`);
+            }else{
+                add_tran_list(data.data.transaction_history)
+            }
         })
         .catch(err => {
             const data = JSON.parse(err.request.response)
@@ -163,7 +167,7 @@ $('#send_money').click(function () {
             $('.remittance_layer').fadeOut(300);
             $('#remittance_info').val('')
             $('#remittance_moeny').val('')
-            index_reload()
+            location.reload()
         })
         .catch(err => {
             const data = JSON.parse(err.request.response)

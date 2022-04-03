@@ -96,7 +96,10 @@
                         </a>
                     </p>
                 </div>
-                <div class="list">
+                <div class="index_list">
+
+                </div>
+                <div class="list ">
                     <ul class="tran_list">
                     </ul>
                 </div>

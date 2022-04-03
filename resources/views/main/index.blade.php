@@ -100,7 +100,7 @@
 
                 </div>
 
-                <div class="list ">
+                <div class="list index_list ">
                     {{--거래내역5건--}}
                     <ul class="tran_list">
                     </ul>

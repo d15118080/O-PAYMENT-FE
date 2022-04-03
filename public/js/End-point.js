@@ -1,6 +1,6 @@
 //const EndPoint = 'http://172.30.1.4:8050/api/v1';
 const EndPoint = 'https://dev.conpay.kr/api/v1';
-//const EndPoint = 'http://127.0.0.1:8070/api/v1';
+//const EndPoint = 'http://127.0.0.1:8050/api/v1';
 
 function loading(type){
     if(type === 'on'){
@@ -137,8 +137,11 @@ function index_reload(){
 }
 
 function today() {
-    var today = new Date().toISOString().substring(0,10);
-
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = ((now.getMonth()+1) >= 10 ? (now.getMonth()+1) : '0' + (now.getMonth()+1))
+    var date = (now.getDate() >= 10 ? now.getDate() : '0' + now.getDate())
+    var today = `${year}-${month}-${date}`;
     return today;
 }
 

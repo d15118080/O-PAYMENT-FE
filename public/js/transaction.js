@@ -61,8 +61,13 @@ function load(){
             .then((response) => {
                 const data = JSON.parse(response.request.response)
                 loading('off')
-                
-                add_tran_list(data.data[0].data)
+                console.log(data)
+                if(data.data[0] === null){
+                    $(".index_list").html(`<div style="text-align: center;margin-top: 35%;"><h3>거래내역이 존재하지 않습니다</h3></div>`);
+                }else{
+                    add_tran_list(data.data[0].data)
+                }
+
                 let length = data.data[0].last_page;
                 if( length < page ){
                     loading_s = true;
@@ -95,9 +100,16 @@ function re_load(){
         })
             .then((response) => {
                 const data = JSON.parse(response.request.response)
+                console.log(data)
+                if(data.data[0] === null){
+                    $(".index_list").html(`<div class="not_data" style="text-align: center;margin-top: 35%;"><h3>거래내역이 존재하지 않습니다</h3></div>`);
+                    $("li").remove(".tran_list_tran");
+                }else{
+                    $("li").remove(".tran_list_tran");
+                    $("div").remove(".not_data");
+                    add_tran_list(data.data[0].data)
+                }
 
-                $("li").remove(".tran_list_tran");
-                add_tran_list(data.data[0].data)
             })
             .catch(err => {
 
