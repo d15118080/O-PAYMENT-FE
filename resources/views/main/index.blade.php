@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/icons.css"/>
+    <script src="/js/loadingoverlay.min.js"></script>
 </head>
 <style>
 
@@ -146,6 +148,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="//unpkg.com/axios/dist/axios.min.js"></script>
 <script type="module" src="/js/index.js"></script>
-
 </body>
 </html>

@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="logout">
-                    <a href="#none">
+                    <a href="#none" onclick="logout();">
                         <img src="/img/icon_logout.png" alt="">로그아웃
                     </a>
                 </li>
@@ -59,5 +59,14 @@
     </div>
     <!-- //메뉴 -->
 </div>
+<script>
+    function logout(){
+        if($.removeCookie('Token')){
+            return location.replace('/')
+        }else{
+            alert('에러가 발생하였습니다')
+        }
+    }
+</script>
 <!-- //레이어팝업 -->
 <!-- //메뉴 -->

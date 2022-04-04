@@ -3,6 +3,7 @@ const EndPoint = 'https://dev.conpay.kr/api/v1';
 //const EndPoint = 'http://127.0.0.1:8050/api/v1';
 
 function loading(type){
+
     if(type === 'on'){
         $('.wrap').fadeOut(500);
         $('.loading_start').fadeIn(1000);
