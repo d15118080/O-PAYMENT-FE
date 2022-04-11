@@ -15,7 +15,7 @@
 <div class="wrap bgGrey">
     <!-- 헤더 -->
     <div class="header_w">
-        <p class="btn_history_back"><a onclick="history.back()">이전페이지로</a></p>
+        <p class="btn_history_back"><a href="/" ">이전페이지로</a></p>
         <h1>CON 출금정보 관리</h1>
         <!-- <p class="btn_close">
             <a href="#none">닫기5</a>
