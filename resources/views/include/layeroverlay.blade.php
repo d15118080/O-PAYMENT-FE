@@ -33,7 +33,7 @@
                             <!-- 입력 -->
                             <h2>CON 충전금액</h2>
                             <div class="ipt_bx">
-                                <input id="amount" type="text" placeholder="1일 1회 최대 충전금액 500만원" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" maxlength="3">
+                                <input id="amount" type="text" placeholder="1회 최대 충전금액 300만원" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');" maxlength="3">
                                 <span class="won">만원</span>
                             </div>
                             <!-- //입력 -->
