@@ -95,7 +95,7 @@
                             <span>입금하실 은행</span>
                         </p>
                         <p>
-                            <strong class="virtual_name"></strong>
+                            <strong class="virtual_name">경남은행 (주)윈글로벌페이</strong>
                         </p>
                     </li>
                     <li>
