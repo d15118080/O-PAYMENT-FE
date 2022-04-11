@@ -35,7 +35,7 @@ $(document).ready(function () {
                 $('.amount').text(comma(data.data[0].amount)+" 원");
                 $('.balance').text(comma(data.data[0].balance)+" CON");
                 $('.virtual_account').text(data.data[0].virtual_account);
-                $('.virtual_name').text(data.data[0].virtual_name);
+                $('.virtual_name').text('경남은행');
                 $('.balance_text').text('거래후 예상 CON');
             }else{
                 $('.balance_text').text('거래후 CON');
