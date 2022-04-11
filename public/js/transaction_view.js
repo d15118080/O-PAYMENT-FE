@@ -58,6 +58,7 @@ $(document).ready(function () {
 
 $('#charge_delete').click(function () {
     loading('on');
+    Token_Check();
     axios({
         url: EndPoint + '/user/charge_delete_request/'+id,
         method: 'get',
