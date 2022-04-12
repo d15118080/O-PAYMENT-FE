@@ -38,7 +38,7 @@
 {{--                </li>--}}
 
                 <li class="cs">
-                    <a href="#none">
+                    <a href="https://pf.kakao.com/_xcxaNvb" target="_blank">
                         <img src="/img/icon_cs.png" alt="">고객센터
                     </a>
                 </li>
