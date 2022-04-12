@@ -63,48 +63,48 @@
 {{--//충전 레이어--}}
 
 {{--출금 레이어--}}
-<div class="layeroverlay withdraw_layer"  style="display: none;">
-    <div class="ly_pop_wrap">
-        <div class="ly_con withdraw_con">
-            <div class="apply_pop">
-                <!-- 텍스트 -->
-                <h1>CON 출금신청</h1>
-                <div class="apply_info">
-                    <p>가입시 입력한 입금계좌로만 출금이 가능하며 초기 셋팅된
-                        일입금 평균액의 20%를 제외한 금액만 출금이 가능합니다.
-                        출금 신청 후 30분이내 처리 됩니다
-                    </p>
-                    <p>
-                        <strong class="txc_default">고민정</strong> 님은 현재 <strong class="txc_default">일반회원</strong>으로<br>
-                        출금 시 출금 수수료 1.5%를 제외한 금액이 출금됩니다
-                    </p>
-                </div>
-                <!-- //텍스트 -->
-                <!-- 입력박스 -->
-                <div class="ipt_section">
-                    <form action="">
-                        <fieldset>
-                            <legend>CON 출금신청</legend>
-                            <!-- 입력 -->
-                            <h2>CON 출금 금액</h2>
-                            <div class="ipt_bx">
-                                <input type="text" placeholder="CON 출금액은 숫자로만 입력해 주세요">
-                                <span class="won">원</span>
-                            </div>
-                            <!-- //입력 -->
-                            <!-- 버튼영역 -->
-                            <div class="btn_w">
-                                <a href="noen" class="btn_default">CON 출금신청</a>
-                            </div>
-                            <!-- //버튼영역 -->
-                        </fieldset>
-                    </form>
-                </div>
-                <!-- //입력박스 -->
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="layeroverlay withdraw_layer"  style="display: none;">--}}
+{{--    <div class="ly_pop_wrap">--}}
+{{--        <div class="ly_con withdraw_con">--}}
+{{--            <div class="apply_pop">--}}
+{{--                <!-- 텍스트 -->--}}
+{{--                <h1>CON 출금신청</h1>--}}
+{{--                <div class="apply_info">--}}
+{{--                    <p>가입시 입력한 입금계좌로만 출금이 가능하며 초기 셋팅된--}}
+{{--                        일입금 평균액의 20%를 제외한 금액만 출금이 가능합니다.--}}
+{{--                        출금 신청 후 30분이내 처리 됩니다--}}
+{{--                    </p>--}}
+{{--                    <p>--}}
+{{--                        <strong class="txc_default">고민정</strong> 님은 현재 <strong class="txc_default">일반회원</strong>으로<br>--}}
+{{--                        출금 시 출금 수수료 1.5%를 제외한 금액이 출금됩니다--}}
+{{--                    </p>--}}
+{{--                </div>--}}
+{{--                <!-- //텍스트 -->--}}
+{{--                <!-- 입력박스 -->--}}
+{{--                <div class="ipt_section">--}}
+{{--                    <form action="">--}}
+{{--                        <fieldset>--}}
+{{--                            <legend>CON 출금신청</legend>--}}
+{{--                            <!-- 입력 -->--}}
+{{--                            <h2>CON 출금 금액</h2>--}}
+{{--                            <div class="ipt_bx">--}}
+{{--                                <input type="text" placeholder="CON 출금액은 숫자로만 입력해 주세요">--}}
+{{--                                <span class="won">원</span>--}}
+{{--                            </div>--}}
+{{--                            <!-- //입력 -->--}}
+{{--                            <!-- 버튼영역 -->--}}
+{{--                            <div class="btn_w">--}}
+{{--                                <a href="noen" class="btn_default">CON 출금신청</a>--}}
+{{--                            </div>--}}
+{{--                            <!-- //버튼영역 -->--}}
+{{--                        </fieldset>--}}
+{{--                    </form>--}}
+{{--                </div>--}}
+{{--                <!-- //입력박스 -->--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 {{--//출금 레이어--}}
 
 {{--송금 레이어--}}
@@ -117,7 +117,7 @@
                 <!-- //텍스트 -->
                 <div class="apply_info">
                     <p style="font-size: 15px; color: #3A87EF">
-                       <b> 송금 금액은 1일 최대 6,000,000 Con 입니다.</b>
+                       <b>1일 송금액 제한 없음.</b>
                     </p>
 
                 </div>

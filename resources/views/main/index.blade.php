@@ -85,7 +85,7 @@
                 </a>
                 <a id="withdraw_on">
                     <img src="/img/icon_finance_3.png" alt="출금">
-                    <span>CON 출금</span>
+                    <span>준비중..</span>
                 </a>
             </div>
             <!-- //금융메뉴 -->
