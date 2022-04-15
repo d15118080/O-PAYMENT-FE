@@ -35,11 +35,7 @@ $(document).ready(function () {
                 $('.amount').text(comma(data.data[0].amount)+" 원");
                 $('.balance').text(comma(data.data[0].balance)+" CON");
                 $('.virtual_account').text(data.data[0].virtual_account);
-                if(data.data[0].virtual_account === '56605257101016'){
-                    $('.virtual_name').text('기업은행');
-                }else{
-                    $('.virtual_name').text('국민은행 (주)더8에이엘');
-                }
+                $('.virtual_name').text('국민은행 (주)더8에이엘');
 
                 $('.balance_text').text('거래후 예상 CON');
             }else{
