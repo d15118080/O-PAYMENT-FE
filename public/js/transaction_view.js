@@ -38,7 +38,7 @@ $(document).ready(function () {
                 if(data.data[0].virtual_account === '56605257101016'){
                     $('.virtual_name').text('기업은행');
                 }else{
-                    $('.virtual_name').text('경남은행 (주)윈글로벌페이');
+                    $('.virtual_name').text('국민은행 (주)더8에이엘');
                 }
 
                 $('.balance_text').text('거래후 예상 CON');
