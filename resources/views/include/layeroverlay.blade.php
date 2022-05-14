@@ -144,10 +144,7 @@
                             <!-- //입력 -->
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a id="send_money" class="btn_default">콘 송금</a>
-                                <div style="margin: 3px;">
-                                    <p style="text-align: center">곗돈송금</p>
-                                </div>
+                                <a id="send_money" class="btn_default">콘 송금 <span>(곗돈송금)</span></a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>
