@@ -90,7 +90,7 @@
                                 <span>입금하실 계좌번호</span>
                             </p>
                             <p>
-                                <strong class="virtual_account">66400000497071</strong>
+                                <strong class="virtual_account">566-052571-01-016</strong>
                             </p>
                         </li>
                         <li>
@@ -98,7 +98,7 @@
                                 <span>입금하실 은행</span>
                             </p>
                             <p>
-                                <strong class="virtual_name">기업은행(인피니티 소프트)</strong>
+                                <strong class="virtual_name">기업은행(주식회사 쓸티)</strong>
                             </p>
                         </li>
                         <li>
