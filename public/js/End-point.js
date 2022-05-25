@@ -1,6 +1,5 @@
-//const EndPoint = 'http://172.30.1.4:8050/api/v1';
-//const EndPoint = "https://dev.conpay.kr/api/v1";
-const EndPoint = "http://127.0.0.1:8060/api/v1";
+const EndPoint = "https://dev.conpay.kr/api/v1";
+//const EndPoint = "http://127.0.0.1:8060/api/v1";
 
 function loading(type) {
     if (type === "on") {
