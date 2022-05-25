@@ -115,7 +115,7 @@
         <div class="ly_con remittance_con">
             <div class="apply_pop">
                 <!-- 텍스트 -->
-                <h1>콘 송금</h1>
+                <h1>콘 선물</h1>
                 <!-- //텍스트 -->
                 <div class="apply_info">
                     <p style="font-size: 15px; color: #3A87EF">
@@ -127,24 +127,24 @@
                 <div class="ipt_section">
                     <form action="">
                         <fieldset>
-                            <legend>CON 송금</legend>
+                            <legend>CON 선물</legend>
                             <!-- 입력 -->
                             <h2>받는사람</h2>
                             <div class="ipt_bx">
-                                <input id="remittance_info" type="text" placeholder="받는분의 콘계좌 또는 가맹점명">
+                                <input id="remittance_info" type="text" placeholder="받는분의 가맹점명">
                             </div>
 
-                            <h2>보낼 금액</h2>
+                            <h2>보낼 CON</h2>
                             <div class="ipt_bx">
                                 <input
                                     oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
-                                    id="remittance_moeny" type="text" placeholder="보낼 금액을 입력해 주세요">
+                                    id="remittance_moeny" type="text" placeholder="보낼 콘을 입력해 주세요">
                                 <span class="won">con</span>
                             </div>
                             <!-- //입력 -->
                             <!-- 버튼영역 -->
                             <div class="btn_w">
-                                <a id="send_money" class="btn_default">콘 송금 <span>(곗돈송금)</span></a>
+                                <a id="send_money" class="btn_default">콘 선물</a>
                             </div>
                             <!-- //버튼영역 -->
                         </fieldset>

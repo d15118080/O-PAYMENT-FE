@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>콘페이 - 대시보드</title>
+    <title>콘키프트 - 대시보드</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
@@ -24,7 +24,7 @@
     <div class="wrap bgGrey">
         <!-- 헤더 -->
         <div class="header_w main">
-            <h1><a href="/"><img src="/img/main_logo.png" alt="콘 페이"></a></h1>
+            <h1><a href="/"><img src="/img/main_logo.png" alt="콘 키프트"></a></h1>
             <!-- <p class="btn_close">
             <a href="#none">닫기5</a>
         </p> -->
@@ -55,7 +55,7 @@
                             aria-hidden="true"></i>
                     </p>
                     <p class="welcome_msg_2">
-                        언제 어디서나 누구나 바로결제!
+                        언제 어디서나 누구나 바로선물!
                     </p>
                 </div>
 
@@ -67,7 +67,7 @@
                     </p>
                     <div class="bot_bx">
                         <p class="btn_apply">
-                            <a class="charge_on">충전신청</a>
+                            <a class="charge_on">CON 충전</a>
                         </p>
                         <p class="acc_number ">
                             <strong class="con_number"></strong>
@@ -84,12 +84,12 @@
                         <span>CON 충전</span>
                     </a>
                     <a id="remittance_on">
-                        <img src="/img/icon_finance_2.png" alt="송금">
-                        <span>CON 송금<span>(곗돈송금)</span></span>
+                        <img src="/img/icon_finance_2.png" alt="선물">
+                        <span>CON 선물<span></span></span>
                     </a>
                     <a id="withdraw_on">
                         <img src="/img/icon_finance_3.png" alt="출금">
-                        <span>준비중..</span>
+                        <span>CON 기프트몰</span>
                     </a>
                 </div>
                 <!-- //금융메뉴 -->

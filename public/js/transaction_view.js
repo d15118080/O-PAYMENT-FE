@@ -22,7 +22,7 @@ $(document).ready(function () {
             } else if (data.data[0].trxtype === "withdraw") {
                 var trxtype = "CON 출금";
             } else if (data.data[0].trxtype === "remittance") {
-                var trxtype = "CON 송금";
+                var trxtype = "CON 선물";
             } else if (data.data[0].trxtype === "charge") {
                 var trxtype = "CON 충전";
             } else if (data.data[0].trxtype === "charging_standby") {

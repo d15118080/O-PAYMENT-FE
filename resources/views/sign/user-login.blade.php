@@ -19,11 +19,9 @@
     <div class="wrap">
         <div class="sign_w login_top_pd">
             <div class="sign_header">
-                <h2 class="txs_x" style="margin-bottom: 5%; color: #2E56A1"><strong>우리들의 작은 계모임</strong></h2>
-                <h1 class="txs_xl"><strong>콘 페이</strong></h1>
+                <h2 class="txs_x" style="margin-bottom: 5%; color: #2E56A1"><strong>우리들의 선물 방식</strong></h2>
+                <h1 class="txs_xl"><strong>콘 기프트</strong></h1>
                 <p>서비스를 위해 로그인이 필요합니다.</p>
-                <p style="text-align: center;color: blue;">우리들의 작은 온라인 계모임 콘페이 입니다 <br>콘페이는 계주에게 곗돈을 송금하는 앱 입니다 <br> 곗돈
-                    외의 불법적인 용도로 이용시 법적 대응이 이뤄지며 불이익이 생길수 있습니다 <br></p>
             </div>
 
             <div class="login">
