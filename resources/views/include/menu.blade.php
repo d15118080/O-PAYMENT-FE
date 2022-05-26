@@ -25,23 +25,23 @@
                 <a href="/setting"><img src="/img/icon_withdraw.png" alt="">출금정보 관리</a>
             </p>
             <ul>
-{{--                <li class="myinfo">--}}
-{{--                    <a href="#none">--}}
-{{--                        <img src="/img/icon_my_info.png" alt="">내정보--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{-- <li class="myinfo"> --}}
+                {{-- <a href="#none"> --}}
+                {{-- <img src="/img/icon_my_info.png" alt="">내정보 --}}
+                {{-- </a> --}}
+                {{-- </li> --}}
 
-{{--                <li class="noti">--}}
-{{--                    <a href="#none">--}}
-{{--                        <img src="/img/icon_notice.png" alt="">공지사항--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                {{-- <li class="noti"> --}}
+                {{-- <a href="#none"> --}}
+                {{-- <img src="/img/icon_notice.png" alt="">공지사항 --}}
+                {{-- </a> --}}
+                {{-- </li> --}}
 
-                <li class="cs">
+                {{-- <li class="cs">
                     <a href="https://pf.kakao.com/_xcxaNvb" target="_blank">
                         <img src="/img/icon_cs.png" alt="">고객센터
                     </a>
-                </li>
+                </li> --}}
 
                 <li class="info">
                     <a href="#none">
@@ -60,10 +60,10 @@
     <!-- //메뉴 -->
 </div>
 <script>
-    function logout(){
-        if($.removeCookie('Token')){
+    function logout() {
+        if ($.removeCookie('Token')) {
             return location.replace('/')
-        }else{
+        } else {
             alert('에러가 발생하였습니다')
         }
     }
